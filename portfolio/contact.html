@@ -2,15 +2,72 @@
 
 <html lang="en">
 
-<head>
+<header>
   <title>Contact Me</title>
-  </head>
+  <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  <h1>Contact Me</h1>
+
+  <style>
+  /* Form styling */
+
+    label, fieldset{
+        font-size: 1.1em;
+    }
+
+    input[type=text] {
+        border: 2px solid #0d1f2d;
+        width: 50%;
+        padding: 8px 8px;
+        margin: 12px 0;
+        box-sizing: border-box;
+        font-size: 1.1em;
+    }
+
+    fieldset {
+        background-color: #fef9ff;
+        width: 55%;
+        padding: 12px 20px;
+        margin: 12px 0;
+        box-sizing:	border-box;
+    }
+
+    select, textarea {
+        margin: 12px 0;
+        font-size: 1em;
+    }
+
+    input[type=submit] {
+        font-size: 1.2em;
+        background-color: #546a7b;
+        color: #fef9ff;
+        padding: 4px 8px;
+    }
+
+    input[type=submit]:hover {
+        background-color: #f2eded;
+        color: #546a7b;
+    }
+
+    textarea {
+        width: 55%;
+        height: 200px;
+        padding: 12px 20px;
+        margin: 12px 0;
+        box-sizing: border-box;
+        border: 2px solid #0d1f2d;
+        border-radius: 3px;
+        background-color: #fff;
+        resize: none;
+    }
+</style>
+</header>
 
 <body>
-  <h1>Contact Me</h1>
-  <hr />
-  <p><a href="index.html">Home</a><p>
-  <hr />
+  <nav>
+    <p><a href="index.html">Home</a><p>
+    <div class="clear-float"></div>
+  </nav>
+
   <h2>Information Request</h2>
   <form action="submit.html" method="POST">
     <label for="firstName">First Name:</label><br />
