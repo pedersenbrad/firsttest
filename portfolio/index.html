@@ -10,19 +10,24 @@
 <main>
 
 <header>
-<head>
+  <link href="teststyles.css" rel="stylesheet" type="text/css" />
+  <style>
+    h1 {
+      background-color: darkgrey;
+    }
+  </style>
 
-  <title>brads portfolio</title>
-
+  <head>
+    <title>brads portfolio</title>
   </head>
-  </header>
+</header>
 
 <body>
 
 <h1> Portfolio for Brad</h1>
-<hr />
+<hr style="border: thin dotted red;" />
 
-<nav><!--navigation links-->
+<nav class="border"><!--navigation links-->
   <p><a href="projects.html">My Projects</a></p>
   <p><a href="testimonials.html">Testimonials</a></p>
   <p><a href="contact.html">Contact Me</a></p>
@@ -30,11 +35,11 @@
   <p>Test to jump to my <a href="#hobbies">hobbies</a> section</p>
 </nav>
 
-<hr />
+<hr style="width: 50%; border: 2px solid blueviolet;" />
 
 <section>
 
-<article id="about-me">
+<article id="about-me" class="border">
   <h2><em>About Me</em></h2>
   <img src="images/profile-image.png" alt="generic profile image" />
     <p>This is my <strong>fist</strong> paragraph about me</p>
