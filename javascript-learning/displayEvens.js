@@ -20,24 +20,23 @@
 // }
 
 function numItems() {
-  var num8 = document.getElementById("num1").value;
-  var num9 = document.getElementById("num2").value;
-  var step0 = document.getElementById("step").value;
+  var num1 = document.getElementById("num1").value;
+  var num2 = document.getElementById("num2").value;
+  var step = document.getElementById("step").value;
   var counter = 0;
   var evenArray = new Array();
 
-
-  for (var i = num8; i == num9; i++) {
-    if (i%2 == 0) {
+  for (var i = Number(num1); i <= Number(num2); i = i + Number(step)) {
+    if (i % 2 == 0) {
       evenArray[counter] = i;
       counter = counter + 1;
-      console.log(counter);
     }
   }
+
 document.getElementById("numInfo").style.display = "block";
-document.getElementById("firstNum").innerText = num8;
-document.getElementById("secondNum").innerText = num9;
-document.getElementById("stepNum").innerText = step0;
+document.getElementById("firstNum").innerText = num1;
+document.getElementById("secondNum").innerText = num2;
+document.getElementById("stepNum").innerText = step;
 document.getElementById("evenNums").innerText = evenArray;
 return false;
 }
